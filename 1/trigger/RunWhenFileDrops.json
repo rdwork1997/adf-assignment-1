@@ -1,0 +1,24 @@
+{
+	"name": "RunWhenFileDrops",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Blob to sql using blob trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/760b8304-2091-4fcd-8b00-05b6618f4159/resourceGroups/DefaultResourceGroup-EUS2/providers/Microsoft.Storage/storageAccounts/stroage2rd",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
