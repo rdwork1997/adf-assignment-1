@@ -203,7 +203,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -216,7 +216,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/input/blobs/Trigger",
-					"blobPathEndsWith": ".csv",
+					"blobPathEndsWith": "customer.csv",
 					"ignoreEmptyBlobs": false,
 					"scope": "[parameters('RunWhenFileDrops_properties_typeProperties_scope')]",
 					"events": [
