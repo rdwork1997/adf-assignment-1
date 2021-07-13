@@ -215,9 +215,9 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/input/blobs/",
-					"blobPathEndsWith": "customer.csv",
-					"ignoreEmptyBlobs": true,
+					"blobPathBeginsWith": "/input/blobs/Trigger",
+					"blobPathEndsWith": ".csv",
+					"ignoreEmptyBlobs": false,
 					"scope": "[parameters('RunWhenFileDrops_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
