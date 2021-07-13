@@ -14,7 +14,7 @@
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/input/blobs/Trigger",
-			"blobPathEndsWith": ".csv",
+			"blobPathEndsWith": "customer.csv",
 			"ignoreEmptyBlobs": false,
 			"scope": "/subscriptions/760b8304-2091-4fcd-8b00-05b6618f4159/resourceGroups/DefaultResourceGroup-EUS2/providers/Microsoft.Storage/storageAccounts/stroage2rd",
 			"events": [
