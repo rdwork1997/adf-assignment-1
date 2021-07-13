@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-assignment-1"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"RunWhenFileDrops_properties_typeProperties_scope": {
+			"value": "/subscriptions/760b8304-2091-4fcd-8b00-05b6618f4159/resourceGroups/DefaultResourceGroup-EUS2/providers/Microsoft.Storage/storageAccounts/stroage2rd"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
